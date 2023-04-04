@@ -1,0 +1,19 @@
+<view class="loading">
+  <van-loading size="50px" type="spinner" vertical wx:if="{{isLoading}}">加载中...</van-loading>
+  <van-divider contentPosition="center" wx:if="{{failLists.length==0&&!isLoading}}">没有新的审核未通过消息哦~</van-divider>
+</view>
+<van-swipe-cell data-index="{{index}}" data-id="{{item._id}}" id="swipe-cell" right-width="{{ 50 }}" left-width="{{ 50 }}" async-close bind:close="onClose" wx:for="{{failLists}}" wx:key="index">
+  <view slot="left" class="left">
+    <van-icon name="add" />
+  </view>
+  <van-cell-group class="cell">
+    <van-cell icon="close" title="{{item.title}}" value="未通过" label="您在‘{{item.attribution}}’下发布的‘{{item.title}}’信息未通过审核，退回原因为“{{item.reason}}”" />
+  </van-cell-group>
+  <view slot="right" class="right">
+    <van-icon name="delete" />
+  </view>
+</van-swipe-cell>
+
+
+<van-notify id="van-notify" />
+<van-dialog id="van-dialog" />

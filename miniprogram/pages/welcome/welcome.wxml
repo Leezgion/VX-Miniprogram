@@ -1,0 +1,10 @@
+<van-notice-bar scrollable text="授权登录后可以进行更多操作欧~" />
+<view class="container">
+    <image class="app_icon" src="/images/app_icon/Leezgion.png"></image>
+    <text class="motto">失之东隅，收之桑榆</text>
+    <view class="btn-box">
+        <!-- <van-button plain type="primary" catchtap="onTapJump">这呢</van-button> -->
+        <van-button round color="linear-gradient(to right, 	#F0E68C,#FFA500)" size="normal" bind:getuserinfo="accredit" open-type="getUserInfo">授权登录</van-button>
+        <!-- <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">123</button> -->
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<wxs module="common" src="../../commonWXS/common.wxs" />
+<view class="daily">
+    <image class="dailyImg" mode="aspectFill"  data-current="{{imgList[img_index].url}}" src="{{imgList[img_index].url}}" catchtap="clickImg"></image>
+    <view hover-class="{{today}}" class="today">{{ today }}</view>
+    <view class="date">{{year}}.{{month < 10 ? "0" + month : month+""}}月——星期{{common.toChinese(week)}}</view>
+    </view>
+
+    <van-grid gutter="{{ 10 }}" column-num="4" clickable="{{true}}" icon-size="{{40}}">
+        <van-grid-item icon="{{item.icon}}" text="{{item.text}}" link-type="navigateTo" url="{{item.url}}" wx:for="{{ pages }}" wx:key="index" />
+    </van-grid>
+    <view class="dailySentence" bindtouchmove="touchmove" bindtouchstart="touchstart" bindtouchend="touchend">
+        <view class="label">PROVERB</view>
+        <view style="white-space:pre-wrap" class="saying">{{sentences[0+index].saying}}
+        </view>
+        <view class="author">{{sentences[0+index].author}}
+        </view>
+        <view class="source">---来源《句读》App</view>
+    </view>
+    <view class="dailyWords" bindtouchmove="wordtouchmove" bindtouchstart="wordtouchstart" bindtouchend="wordtouchend">
+        <view class="label">NOVELTY</view>
+        <view class="spell">
+            <view wx:for="{{common.splitDot(wordsList[0+word_index].spell)}}" wx:key="*this">{{item}}</view>
+        </view>
+        <view class="words">
+            <view class="matts" wx:for="{{wordsList[0+word_index].words}}" wx:key="*this">
+            <!-- 实现田字格 -->
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+                <view class="word">{{item}}</view>
+            </view>
+        </view>
+        <view class="words_">
+            <view class="paraphrase">释义</view>
+            <view  style="white-space:pre-wrap" class="explanation">{{wordsList[0+word_index].explanation}}</view>
+        </view>
+        <view class="source">---来源于《句读》App</view>
+    </view>

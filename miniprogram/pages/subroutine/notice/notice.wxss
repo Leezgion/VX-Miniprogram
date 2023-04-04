@@ -1,0 +1,12 @@
+.warning{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 28rpx;
+}
+.warning view{
+    margin: 1vh 5vw;
+}

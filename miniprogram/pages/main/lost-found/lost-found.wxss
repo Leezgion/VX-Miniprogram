@@ -1,0 +1,103 @@
+/* 发布按钮 */
+page {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.publish_btn {
+  position: fixed;
+  right: 60rpx;
+  bottom: 200rpx;
+}
+
+.publish_btn .van-button {
+  width: 120rpx;
+  height: 120rpx;
+  font-size: 65rpx;
+  box-shadow: 0 0 10px rgba(7, 193, 96, 0.6);
+}
+
+/* 数据信息总容器 */
+.datalists {
+  width: 650rpx;
+  margin: 20rpx auto;
+  border: 20rpx outset;
+  border-radius: 50rpx;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  margin: 20rpx;
+}
+
+.user image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.user_ {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400rpx;
+}
+
+.user_ .van-button {
+  font-size: 20rpx;
+}
+
+.user__ {
+  position: absolute;
+  right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content .van-row {
+  border-top: 1px solid rgb(144, 238, 144);
+}
+
+.descr .van-col {
+  height: 270rpx;
+  font-size: smaller;
+  padding: 30rpx;
+  text-indent: 10%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+.nickname {
+  /* 用户名--容器 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.uploadTime {
+  font-size: smaller;
+  color: #888;
+}
+
+.attributes {
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 1px solid rgb(144, 238, 144);
+  font-size: smaller;
+}
+.attributes .title{
+  font-weight: 700;
+}
+.attributes>view {
+  margin-left: 20rpx;
+}
+
+.bottomLoading {
+  text-align: center;
+}

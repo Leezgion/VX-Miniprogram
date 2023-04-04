@@ -1,0 +1,16 @@
+/* pages/main/informationExchange/communication/uploadBlog/uploadBlog.wxss */
+.container{
+    padding: 30rpx;
+}
+.container textarea{
+    width: 100%;
+    height: 25vh;
+    border-bottom: 1px solid #f5f6f7;
+    font-size: small;
+}
+.container button{
+    margin-top: 5vh;
+}
+.container .van-uploader{
+    margin-top: 5vh;
+}

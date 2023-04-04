@@ -1,0 +1,19 @@
+<wxs module="common" src="../../../commonWXS/common.wxs" />
+<view class="item" wx:for="{{admins}}" wx:key="index">
+    <van-cell>
+        <view slot="title">
+            <view class="user">
+                <image src="{{item.user.avatarUrl}}"></image>
+                <view class="van-cell-text">
+                    <view class="nickname">{{item.user.nickName}}</view>
+                    <view wx:if="{{item.user.gender==0}}">🚹</view>
+                    <view wx:if="{{item.user.gender==1}}">🚺</view>
+                </view>
+                <view class="time">{{common.timesFun(item.uploadTime)}}成为管理员</view>
+            <view>
+                <van-button size="mini" catchtap="cancelPower" data-id="{{item._id}}" data-index="{{index}}">降权</van-button>
+            </view>
+            </view>
+        </view>
+    </van-cell>
+</view>

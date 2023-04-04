@@ -1,0 +1,47 @@
+/* 发布按钮 */
+.publish_btn {
+  position:fixed;
+  right: 60rpx;
+  bottom: 200rpx;
+}
+.publish_btn .van-button{
+  width: 120rpx;
+  height: 120rpx;
+  font-size: 65rpx;
+  box-shadow: 0 0 10px rgba(7,193,96,0.6);
+}
+.van-card{
+  margin: 2vh 2vw;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(22, 32, 27, 0.6);
+}
+.tag{
+  margin: 0 10rpx;
+}
+.icon{
+  float: left;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.block {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+}
+.bottomLoading{
+  text-align: center;
+}
+.user__{
+  height: 15vw;
+  position: absolute;
+  right: 0vw;
+  top: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

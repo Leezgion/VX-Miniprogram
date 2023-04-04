@@ -1,0 +1,35 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user image {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.time{
+    font-size: smaller;
+    color: #888888;
+}
+.van-cell-text{
+    width: 350rpx;
+    overflow: hidden;
+}
+.time{
+    width: 80rpx;
+    font-size: 20rpx;
+}
+.right{
+    display: flex;
+    height: 100%;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50rpx;
+    border-left: 1px solid;
+}
+.right .van-icon{
+    border-radius: 50%;
+}

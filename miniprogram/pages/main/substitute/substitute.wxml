@@ -1,0 +1,56 @@
+<wxs module="common" src="../../../commonWXS/common.wxs" />
+<view class="task" wx:for="{{fileList}}" wx:key="index" data-index="{{index}}">
+    <view class="user__">
+        <van-icon wx:if="{{item.visible}}" data-id="{{item._id}}" data-index="{{index}}" catchtap="delete" class="close" name="cross" />
+    </view>
+    <view class="user">
+        <view>
+            <image src="{{item.user.avatarUrl}}"></image>
+        </view>
+        <view>{{item.user.nickName}}</view>
+    </view>
+    <view class="middle">
+        <view class="title">
+            <view>
+                <van-icon name="bullhorn-o" />
+            </view>
+            <view>
+                {{item.title}}
+            </view>
+        </view>
+        <view class="descr" data-index="{{index}}" catchtap="viewDetails" >
+            {{item.descr}}
+        </view>
+    </view>
+    <view class="attr">
+        <view>
+            <van-icon name="balance-list-o" /> {{item.type}}
+        </view>
+        <view>
+            <van-icon name="hotel-o" /> {{item.destn}}
+        </view>
+        <view>
+            <van-icon name="balance-o" /> {{item.price}}
+        </view>
+        <view>
+            <van-icon name="user-circle-o" />
+            <van-button class="btn" round size="mini" catchtap="setClipboardData" data-contact="{{item.contact}}">{{item.contact}}</van-button>
+        </view>
+    </view>
+    <view class="uploadTime">{{common.timesFun(item.uploadTime)}}发布</view>
+</view>
+
+<view class="bottomLoading">
+    <van-loading size="20px" type="spinner" wx:if="{{isLoading}}">数据加载中...</van-loading>
+    <van-divider contentPosition="center" customStyle="color: #cccccc; border-color: #cccccc; font-size: 15px;" wx:else>
+        已经到底啦！
+    </van-divider>
+</view>
+
+<van-dialog id="van-dialog" />
+
+<van-button round icon="plus" type="primary" class="publish_btn" catchtap="redirect"></van-button>
+
+
+
+

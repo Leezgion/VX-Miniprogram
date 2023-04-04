@@ -1,0 +1,108 @@
+{
+    "pages": [
+        "pages/welcome/welcome",
+        "pages/main/main",
+        "pages/main/lost-found/lost-found",
+        "pages/main/secondHandDeal/secondHandDeal",
+        "pages/main/substitute/substitute",
+        "pages/main/informationExchange/informationExchange",
+        "pages/main/informationExchange/communication/communication",
+        "pages/main/informationExchange/communication/uploadBlog/uploadBlog",
+        "pages/main/uploadPage/uploadPage",
+        "pages/notification/notification",
+        "pages/subroutine/subroutine",
+        "pages/subroutine/history/history",
+        "pages/subroutine/notice/notice",
+        "pages/subroutine/cartogram/cartogram",
+        "pages/subroutine/approve/approve",
+        "pages/subroutine/approve/lostFound/lostFound",
+        "pages/subroutine/approve/deal/deal",
+        "pages/subroutine/approve/task/task",
+        "pages/subroutine/saying/saying",
+        "pages/subroutine/saying/newlyUpload/newlyUpload",
+        "pages/subroutine/applicants/applicants",
+        "pages/subroutine/admins/admins"
+    ],
+    "window": {
+        "backgroundColor": "#FFFFFF",
+        "navigationBarTitleText": "哪呢",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#dbdbdb",
+        "selectedColor": "#1296db",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/main/main",
+                "text": "首页",
+                "iconPath": "images/tabBar_icon/shouye.png",
+                "selectedIconPath": "images/tabBar_icon/yanjing.png"
+            },
+            {
+                "pagePath": "pages/notification/notification",
+                "text": "通知",
+                "iconPath": "images/tabBar_icon/tongzhi.png",
+                "selectedIconPath": "images/tabBar_icon/yanjing.png"
+            },
+            {
+                "pagePath": "pages/subroutine/subroutine",
+                "text": "设置",
+                "iconPath": "images/tabBar_icon/shezhi.png",
+                "selectedIconPath": "images/tabBar_icon/yanjing.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-action-sheet": "@vant/weapp/action-sheet/index",
+        "van-button": "@vant/weapp/button/index",
+        "van-card": "@vant/weapp/card/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-col": "@vant/weapp/col/index",
+        "van-collapse": "@vant/weapp/collapse/index",
+        "van-collapse-item": "@vant/weapp/collapse-item/index",
+        "van-count-down": "@vant/weapp/count-down/index",
+        "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+        "van-dialog": "@vant/weapp/dialog/index",
+        "van-divider": "@vant/weapp/divider/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-empty": "@vant/weapp/empty/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-image": "@vant/weapp/image/index",
+        "van-loading": "@vant/weapp/loading/index",
+        "van-notice-bar": "@vant/weapp/notice-bar/index",
+        "van-notify": "@vant/weapp/notify/index",
+        "van-overlay": "@vant/weapp/overlay/index",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-row": "@vant/weapp/row/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-skeleton": "@vant/weapp/skeleton/index",
+        "van-steps": "@vant/weapp/steps/index",
+        "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-tag": "@vant/weapp/tag/index",
+        "van-toast": "@vant/weapp/toast/index",
+        "van-tree-select": "@vant/weapp/tree-select/index",
+        "van-uploader": "@vant/weapp/uploader/index",
+        "van-sticky": "@vant/weapp/sticky/index"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "哪呢将会获取你的位置信息"
+        }
+    },
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "weui": true
+    }
+}

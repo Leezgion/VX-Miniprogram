@@ -1,0 +1,19 @@
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+    <van-collapse-item title="金句" name="1">
+        <view wx:for="{{sentences}}" wx:key="index">
+            <van-cell-group inset class="cell">
+                <van-cell title="{{item.author}}" value="PROVERB" label="{{item.saying}}" />
+            </van-cell-group>
+        </view>
+    </van-collapse-item>
+</van-collapse>
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+    <van-collapse-item title="趣词" name="2">
+        <view wx:for="{{words}}" wx:key="index">
+            <van-cell-group inset class="cell">
+                <van-cell title="{{item.words}}{{item.spell}}" value="NOVELTY" label="{{item.explanation}}" />
+            </van-cell-group>
+        </view>
+    </van-collapse-item>
+</van-collapse>
+<van-button round icon="plus" color="#0993E2" class="publish_btn" catchtap="redirect"></van-button>

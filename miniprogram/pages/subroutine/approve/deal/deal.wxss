@@ -1,0 +1,19 @@
+/* pages/subroutine/approve/deal/deal.wxss */
+.tag {
+    margin: 0 10rpx;
+  }
+  
+  .card .van-card__desc {
+    display: inline;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .left{
+    text-align: left;
+    font-size: smaller;
+  }
+  .popup .van-cell {
+    align-items:center;
+  }

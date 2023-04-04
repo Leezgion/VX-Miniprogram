@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e nane-development-3fczdhr2551eece --n quickstartFunctions --r --project "C:\Users\LeeZ\WeChatProjects\nane" --report_start --report

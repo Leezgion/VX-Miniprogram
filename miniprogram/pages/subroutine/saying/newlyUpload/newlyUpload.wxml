@@ -1,0 +1,10 @@
+<view class="container">
+    <form bindsubmit="onSubmit">
+        <textarea wx:if="{{index==0}}" name="saying" value="{{value}}" placeholder="输入金句" bindinput="onChange"></textarea>
+        <input wx:if="{{index==0}}" name="author" value="{{value}}" placeholder="作者或者出处" bindinput="onChange"></input>
+        <input wx:if="{{index==1}}" name="words" value="{{value}}" placeholder="输入趣词" bindinput="onChange"></input>
+        <input wx:if="{{index==1}}" name="spell" value="{{value}}" placeholder="输入拼音，每字以.隔开" bindinput="onChange"></input>
+        <textarea wx:if="{{index==1}}" name="explanation" value="{{value}}" placeholder="输入趣词解释" bindinput="onChange"></textarea>
+        <button type="primary" disabled="{{btn}}" form-type="submit">上传</button>
+    </form>
+</view>

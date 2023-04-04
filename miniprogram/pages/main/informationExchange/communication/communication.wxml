@@ -1,0 +1,120 @@
+<wxs module="common" src="../../../../commonWXS/common.wxs" />
+<van-sticky>
+    <view class="screen">
+        <view class="all" catchtap="getAll">
+            <view class="btn-left">
+                <van-icon class="icon" name="friends-o" />
+                <view class="text">全部</view>
+            </view>
+            <view class="triangle-left"></view>
+        </view>
+        <view class="mine" catchtap="screening">
+            <view class="triangle-right"></view>
+            <view class="btn-right">
+                <view class="text">我的</view>
+                <van-icon class="icon" name="user-circle-o" />
+            </view>
+        </view>
+        <!-- <van-button round icon="friends-o" size="small" bind:click="all">全部</van-button>
+        <van-button round icon="user-circle-o" size="small" bind:click="screening">我的</van-button> -->
+    </view>
+
+</van-sticky>
+<view class="loopList">
+    <van-row>
+        <van-col span="24">
+            <view class="item" wx:for="{{fileList}}" wx:key="index">
+                <van-cell>
+                    <view slot="title">
+                        <view class="user">
+                            <image src="{{item.user.avatarUrl}}"></image>
+                            <view class="van-cell-text">
+                                <view class="nickname">{{item.user.nickName}}</view>
+                                <view class="model">来源:{{item.model}}</view>
+                            </view>
+                            <van-icon data-id="{{item._id}}" data-index="{{index}}" catchtap="deleteBlog" wx:if="{{item.visible}}" class="close" name="cross" />
+                        </view>
+                    </view>
+                </van-cell>
+                <view class="blog">
+                    <view>
+                        {{item.content}}
+                    </view>
+                    <van-grid wx:if="{{item.imgUrl.length}}" column-num="{{common.imageColumn(item.imgUrl.length)}}" border="{{ false }}">
+                        <van-grid-item use-slot wx:for="{{item.imgUrl}}" wx:for-item="img" wx:key="index">
+                            <van-image width="{{common.imageWidth(item.imgUrl.length,deviceWidth)}}" height="{{common.imageWidth(item.imgUrl.length,deviceWidth)}}" fit="cover" src="{{img}}" data-urls="{{item.imgUrl}}" data-current="{{img}}" catchtap="clickImg"></van-image>
+                        </van-grid-item>
+                    </van-grid>
+                    <view wx:if="{{item.loc}}" class="loc">
+                        <van-icon name="location-o" />{{item.loc}}
+                    </view>
+                </view>
+                <van-cell>
+                    <view class="control">
+                        <view class="date">
+                            <view>{{common.timesFun(item.uploadTime)}}</view>
+                        </view>
+                        <view class="btn">
+                            <van-button plain="{{item.isLike}}" icon="thumb-circle-o" type="primary" size="small" catchtap="like" data-id="{{item._id}}" data-index="{{index}}">
+                                <block wx:if="{{item.likes}}">{{common.num(item.likes)}}</block>
+                                <block wx:else="">点赞</block>
+                            </van-button>
+                            <van-button plain icon="comment-circle-o" type="info" size="small" catchtap="discuss" data-id="{{item._id}}" data-index="{{index}}">
+                                <block wx:if="{{item.comments}}">{{common.num(item.comments)}}</block>
+                                <block wx:else="">评论</block>
+                            </van-button>
+                        </view>
+                    </view>
+                </van-cell>
+            </view>
+        </van-col>
+    </van-row>
+    <view class="bottomLoading">
+        <van-loading size="20px" type="spinner" wx:if="{{isLoading}}">数据加载中...</van-loading>
+        <van-divider contentPosition="center" customStyle="color: #cccccc; border-color: #cccccc; font-size: 15px;" wx:else>
+            已经到底啦！
+        </van-divider>
+    </view>
+</view>
+
+<van-button round icon="plus" color="#7B68EE" class="publish_btn" catchtap="redirect"></van-button>
+<van-popup show="{{ commentSection }}" round position="bottom" custom-style="height: 50%;" bind:close="onClose">
+    <view class="section">
+        <block wx:if="{{commentLoading}}">
+            <view class="topSection">{{commentList.length}}条评论</view>
+            <view class="mainSection">
+                <block wx:if="{{commentList.length}}">
+                    <view wx:for="{{commentList}}" wx:key="index" class="commentItem">
+                        <view class="avatar">
+                            <image src="{{item.user.avatarUrl}}"></image>
+                        </view>
+                        <view class="comments">
+                            <view class="nickname">
+                                <view>{{item.user.nickName}}</view>
+                                <view>{{common.timesFun(item.uploadTime)}}</view>
+                            </view>
+                            <view class="comment">{{item.comment}}</view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <van-empty image="search" description="还没有人评论哦~" />
+                </block>
+            </view>
+        </block>
+        <block wx:else="">
+            <view style="text-align:center;padding-top: 100rpx;">
+                <van-loading type="spinner" color="#1989fa" />
+            </view>
+        </block>
+        <view class="bottomSection">
+            <van-cell-group>
+                <van-field value="{{ comment }}" center clearable label="" placeholder="请输入评论" border="{{ false }}" use-button-slot bind:input="input">
+                    <van-button slot="button" size="small" type="primary" disabled="{{btn}}" catchtap="uploadComment">
+                        发送
+                    </van-button>
+                </van-field>
+            </van-cell-group>
+        </view>
+    </view>
+</van-popup>

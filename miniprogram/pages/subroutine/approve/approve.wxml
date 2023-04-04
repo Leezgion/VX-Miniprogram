@@ -1,0 +1,4 @@
+<van-cell title="失物招领" is-link link-type="navigateTo" url="./lostFound/lostFound" value="进行审核" arrow-direction="down" />
+<van-cell title="二手交易" is-link link-type="navigateTo" url="./deal/deal" value="进行审核" arrow-direction="down" />
+<van-cell title="跑腿任务" is-link link-type="navigateTo" url="./task/task" value="进行审核" arrow-direction="down" />
+<!-- <van-cell title="社区交流" is-link link-type="navigateTo" url="./blog/blog" value="进行审核" arrow-direction="down" /> -->

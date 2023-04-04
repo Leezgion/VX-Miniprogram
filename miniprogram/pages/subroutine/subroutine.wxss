@@ -1,0 +1,46 @@
+.user{
+    height: 200rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:0 30rpx;
+}
+.user .avatar image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.user .nickname{
+    margin-left: 40rpx;
+    font-weight: 500;
+}
+.user .status{
+    margin-left: 40rpx;
+    color: #888888;
+}
+
+.category-item {
+    width: 100%;
+    margin: 20rpx 0;
+    border-top: 1rpx solid #d9d9d9;
+    border-bottom: 1rpx solid #d9d9d9;
+    background-color: #fff;
+}
+
+.detail-item {
+    display: flex;
+    margin-left: 30rpx;
+    border-bottom: 1px solid RGBA(217, 217, 217, .4);
+    height: 85rpx;
+    align-items: center;
+}
+
+.detail-item image {
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.detail-item text {
+    margin-left: 30rpx;
+    color: #d1c3c3;
+}

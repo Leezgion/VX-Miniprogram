@@ -1,0 +1,19 @@
+
+.van-card {
+    margin: 20rpx 10rpx;
+    box-shadow: 0 0 10px #000;
+}
+.van-tag{
+    margin-right: 10rpx;
+}.right{
+    display: flex;
+    height: 100%;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60rpx;
+}
+.right .van-icon{
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+}

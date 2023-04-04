@@ -1,0 +1,34 @@
+<wxs module="common" src="../../../commonWXS/common.wxs" />
+<block wx:for="{{fileList}}" wx:for-item="item" wx:for-index='key' wx:key="index">
+    <van-card id="{{key}}" num="{{item.num}}" price="{{item.price}}" desc="{{item.descr}}" title="{{item.title}}">
+        <view slot="tags">
+            <van-tag plain color="#f2826a" class="tag">{{item.tags}}</van-tag>
+            <van-tag plain color="#f2826a" class="tag">{{item.type}}</van-tag>
+            <van-tag plain color="#f2826a" class="tag" wx:if="{{item.remark}}">{{item.remark}}</van-tag>
+            <view class="user__">
+                <van-icon wx:if="{{item.visible}}" data-id="{{item._id}}" data-index="{{index}}" catchtap="delete" class="close" name="cross" />
+            </view>
+        </view>
+        <view slot="footer">
+            <view class="icon">
+                <!-- <van-tag text-color="#A9A9A9" color="#fafafa">
+                            浏览量:{{item.views}}人
+                            <van-icon wx:if="{{item.tag==hot}}" name="fire-o" color="#ee0a24" />
+                        </van-tag> -->
+            </view>
+            <van-button size="mini" bind:click="setClipboardData" data-contact="{{item.contact}}">{{item.contact}}</van-button>
+        </view>
+
+    </van-card>
+</block>
+<van-toast id="van-toast" />
+
+<view class="bottomLoading">
+    <van-loading size="20px" type="spinner" wx:if="{{isLoading}}">数据加载中...</van-loading>
+    <van-divider contentPosition="center" customStyle="color: #cccccc; border-color: #cccccc; font-size: 15px;" wx:else>
+        已经到底啦！
+    </van-divider>
+</view>
+
+<van-dialog id="van-dialog" />
+<van-button round icon="plus" type="primary" class="publish_btn" catchtap="redirect"></van-button>

@@ -1,0 +1,21 @@
+<wxs module="common" src="../../../commonWXS/common.wxs" />
+
+<van-swipe-cell data-index="{{index}}" data-id="{{item._id}}" async-close bind:close="onClose" right-width="{{ 40 }}" wx:for="{{applicants}}" wx:key="index">
+    <van-cell>
+        <view slot="title">
+            <view class="user">
+                <image src="{{item.user.avatarUrl}}"></image>
+                <view class="van-cell-text">
+                    <view class="nickname">{{item.user.nickName}}想申请成为管理员</view>
+                </view>
+                <van-button plain="{{!item.passed}}" round type="info" size="mini" catchtap="applyPass" data-id="{{item.openid}}" data-index="{{index}}" data-user="{{item.user}}">是否通过</van-button>
+                <view class="time">{{common.timesFun(item.uploadTime)}}</view>
+            </view>
+        </view>
+    </van-cell>
+    <view slot="right" class="right">
+        <van-icon name="delete" />
+    </view>
+</van-swipe-cell>
+
+<van-dialog id="van-dialog" />

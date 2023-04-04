@@ -1,0 +1,58 @@
+<wxs module="common" src="../../../commonWXS/common.wxs" />
+<!-- <van-dropdown-menu>
+  <van-dropdown-item value="{{ value }}" options="{{option1}}" bind:change="select1" />
+</van-dropdown-menu> -->
+<view class="datalists" wx:for="{{fileList}}" wx:key="index">
+  <van-row>
+    <van-col span="24">
+      <view class="user">
+        <image src="{{item.user.avatarUrl}}"></image>
+        <view class="user_">
+          <view>
+            <view class="nickname">{{item.user.nickName}}</view>
+            <view class="uploadTime">{{common.timesFun(item.uploadTime)}}发布</view>
+          </view>
+          <view>
+            <van-button round plain size="small" color="#90EE90" catchtap="setClipboardData" data-contact="{{item.contact}}">{{item.contact}}</van-button>
+          </view>
+        </view>
+        <view class="user__">
+          <van-icon wx:if="{{item.visible}}" data-id="{{item._id}}" data-index="{{index}}" catchtap="delete" class="close" name="cross" />
+        </view>
+      </view>
+    </van-col>
+  </van-row>
+  <van-row class="content">
+    <van-col span="16" class="descr" catchtap="viewDetails" data-index="{{index}}">
+      {{item.descr}}</van-col>
+    <van-col span="8">
+      <view class="attributes">
+        <view class="title">
+          <van-icon name="flag-o" />
+          {{item.title}}
+          </view>
+        <view class="type">
+          <van-icon name="label-o" />
+          {{item.itemType}}
+        </view>
+        <view class="time">
+          <van-icon name="clock-o" />
+          {{item.date}}
+        </view>
+        <view class="locale">
+          <van-icon name="location-o" />
+          {{item.locale}}
+        </view>
+      </view>
+    </van-col>
+  </van-row>
+</view>
+<view class="bottomLoading">
+  <van-loading size="20px" type="spinner" wx:if="{{isLoading}}">数据加载中...</van-loading>
+  <van-divider contentPosition="center" customStyle="color: #cccccc; border-color: #cccccc; font-size: 15px;" wx:else>
+    已经到底啦！
+  </van-divider>
+</view>
+<van-button round icon="plus" type="primary" class="publish_btn" catchtap="redirect"></van-button>
+
+<van-dialog id="van-dialog" />

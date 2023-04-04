@@ -1,0 +1,30 @@
+/* pages/welcome/welcome.wxss */
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.app_icon{
+    width:200rpx;
+    height:200rpx;
+    /* margin-top:160rpx; */
+    border-radius: 50%;
+    border: 1px solid #9F4311;
+}
+.motto{
+    /* margin-top:100rpx; */
+    font-size:32rpx;
+    font-weight: bold;
+    color:#9F4311;
+}
+.btn-box{
+    display: flex;
+    flex-direction: column;
+}
+.van-button{
+    margin: 5px;
+    width:50vw;
+}

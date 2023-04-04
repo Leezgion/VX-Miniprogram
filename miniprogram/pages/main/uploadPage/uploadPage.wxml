@@ -1,0 +1,38 @@
+<van-dropdown-menu>
+  <van-dropdown-item value="{{value}}" options="{{options}}" bind:change="select" />
+</van-dropdown-menu>
+<view wx:if="{{item=='失物招领'}}">
+  <van-cell-group>
+    <van-field value="{{ itemTitle }}" clearable label="物品名称" left-icon="info-o" placeholder="物品名称" bind:click-icon="onClickIcon" bind:change="titleChange" />
+    <van-field value="{{ itemDesc }}" left-icon="description" label="描述" type="textarea" placeholder="请输入描述" autosize maxlength="100" show-word-limit border="{{ true }}" bind:change="descChange" />
+    <van-field value="{{ itemType }}" clearable label="物品类型" left-icon="question-o" placeholder="物品类型" bind:click-icon="onClickIcon" bind:change="typeChange" />
+    <van-field value="{{ itemDate }}" clearable label="时间" left-icon="clock-o" placeholder="大概时间" bind:click-icon="onClickIcon" bind:change="dateChange" />
+    <van-field value="{{ itemLoc}}" clearable label="地点" left-icon="location-o" placeholder="地点位置" bind:click-icon="onClickIcon" bind:change="locChange" />
+    <!-- <van-field value="{{contact}}" clearable label="联系方式" left-icon="contact" placeholder="微信号" bind:click-icon="onClickIcon" bind:change="vxChange" /> -->
+  </van-cell-group>
+</view>
+<view wx:if="{{item=='二手交易'}}">
+  <van-cell-group>
+    <van-field value="{{ itemTitle }}" clearable label="物品名称" left-icon="info-o" placeholder="物品名称" bind:click-icon="onClickIcon" bind:change="titleChange" />
+    <van-field value="{{ itemDesc }}" left-icon="description" label="物品简介" type="textarea" placeholder="简单介绍" autosize maxlength="100" show-word-limit border="{{ true }}" bind:change="descChange" />
+    <van-field value="{{ wornItem }}" clearable label="崭新程度" left-icon="flag-o" placeholder="例如:九成新" bind:click-icon="onClickIcon" bind:change="wChange" />
+    <van-field value="{{ itemType}}" clearable label="物品类型" left-icon="question-o" placeholder="电子设备、纸质书等" bind:click-icon="onClickIcon" bind:change="typeChange" />
+    <van-field value="{{ itemPrice}}" clearable label="物品价格" left-icon="gold-coin-o" placeholder="大概估价" bind:click-icon="onClickIcon" bind:change="priceChange" />
+    <van-field value="{{ itemNum}}" type="number" clearable label="物品数量" left-icon="cart-o" placeholder="输入数字" bind:click-icon="onClickIcon" bind:change="numChange" />
+  </van-cell-group>
+</view>
+<view wx:if="{{item=='跑腿任务'}}">
+  <van-cell-group>
+    <van-field value="{{ itemTitle }}" clearable label="任务名称" left-icon="info-o" placeholder="任务名称" bind:click-icon="onClickIcon" bind:change="titleChange" />
+    <van-field value="{{ itemType}}" clearable label="任务类型" left-icon="question-o" placeholder="代领外卖、快递等" bind:click-icon="onClickIcon" bind:change="typeChange" />
+    <van-field value="{{ itemDate }}" clearable label="预计时间"  left-icon="clock-o" type="number" placeholder="例如:3小时" bind:click-icon="onClickIcon" bind:change="dateChange" />
+    <van-field value="{{ itemLoc}}" clearable label="目的地" left-icon="location-o" placeholder="目的地" bind:click-icon="onClickIcon" bind:change="locChange" />
+    <van-field value="{{ itemPrice}}" clearable label="报酬" left-icon="gold-coin-o" placeholder="报酬" bind:click-icon="onClickIcon" bind:change="priceChange" />
+    <van-field value="{{ itemDesc }}" left-icon="description" label="任务描述" type="textarea" placeholder="任务介绍" autosize maxlength="100" show-word-limit border="{{ true }}" bind:change="descChange" />
+  </van-cell-group>
+</view>
+<!-- <van-uploader file-list="{{ fileList }}" max-count="1" deletable="{{ true }}" bind:after-read="afterRead" /> -->
+<van-field value="{{contact}}" clearable label="联系方式" left-icon="contact" placeholder="微信号" bind:click-icon="onClickIcon" bind:change="vxChange" />
+<van-button disabled="{{btn}}" color="linear-gradient(to right, #4bb0ff, #6149f6)" size="large" bind:click="publish">
+  发布
+</van-button>

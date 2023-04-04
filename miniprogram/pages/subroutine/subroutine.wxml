@@ -1,0 +1,67 @@
+<view class="user">
+    <view class="avatar">
+        <image src="{{user.avatarUrl}}"></image>
+    </view>
+    <view class="nickname">{{user.nickName}}</view>
+    <view class="status"  wx:if="{{isAdmin[0].level==1}}">管理员</view>
+    <view class="status"  wx:if="{{isAdmin[0].level==0}}">💎</view>
+    <view class="status"  wx:if="{{isAdmin.length==0}}">用户</view>
+</view>
+<van-divider customStyle=" border-color: #888; " />
+<van-cell icon="delete" title="缓存清理" is-link catchtap="clearCache" />
+<van-cell icon="friends" title="申请管理员" is-link catchtap="empower" />
+<van-cell icon="todo-list" is-link title="历史记录" link-type="navigateTo" url="/pages/subroutine/history/history" />
+<van-cell icon="smile-comment" is-link title="公告" link-type="navigateTo" url="/pages/subroutine/notice/notice" />
+<view wx:if="{{isAdmin[0].power}}">
+    <van-divider contentPosition="center" customStyle="color: #888; border-color: #888; font-size: 15px;">
+        管理员权限
+    </van-divider>
+    <van-cell icon="column" is-link title="统计信息" link-type="navigateTo" url="/pages/subroutine/cartogram/cartogram" />
+    <van-cell icon="manager" is-link title="审核信息" link-type="navigateTo" url="/pages/subroutine/approve/approve" />
+    <van-cell icon="fire" is-link title="金句趣词" link-type="navigateTo" url="/pages/subroutine/saying/saying" />
+</view>
+<view wx:if="{{isAdmin[0].level==0}}">
+    <van-divider contentPosition="center" customStyle="color: #888; border-color: #888; font-size: 13px;">
+        最高权限
+    </van-divider>
+    <van-cell icon="umbrella-circle" is-link title="管理员申请" link-type="navigateTo" url="/pages/subroutine/applicants/applicants" />
+    <van-cell icon="gem" is-link title="管理员列表" link-type="navigateTo" url="/pages/subroutine/admins/admins" />
+</view>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="category-item">
+    <block wx:for="{{cache}}" wx:key='this'>
+        <view class="detail-item" catchtap="{{item.tap}}">
+            <image src="{{item.iconurl}}"></image>
+            <text>{{item.title}}</text>
+            <view class="detail-item-btn"></view>
+        </view>
+    </block>
+</view>
+<view class="category-item">
+    <block wx:for="{{basics}}" wx:key='this'>
+        <view class="detail-item" catchtap="{{item.tap}}">
+            <image src="{{item.iconurl}}"></image>
+            <text>{{item.title}}</text>
+            <view class="detail-item-btn"></view>
+        </view>
+    </block>
+</view>
+<view class="category-item">
+    <block wx:for="{{others}}" wx:key='this'>
+        <view class="detail-item" catchtap="{{item.tap}}">
+            <image src="{{item.iconurl}}"></image>
+            <text>{{item.title}}</text>
+            <view class="detail-item-btn"></view>
+        </view>
+    </block>
+</view> -->

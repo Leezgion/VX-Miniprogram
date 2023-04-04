@@ -1,0 +1,40 @@
+<van-divider contentPosition="center" textColor="#cccccc" borderColor="#cccccc" fontSize="16"> 待审核</van-divider>
+<view wx:if="{{own.length==0}}" style="text-align: center; color:#888888;">(空)</view>
+
+<van-card num="{{item.num}}" price="{{item.price}}" desc="{{item.descr}}" title="{{item.title}}" wx:for="{{own}}" wx:key="index">
+  <view slot="tags">
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.itemType}}">{{item.itemType}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.tags}}">崭新程度:{{item.tags}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.type}}">物品类型:{{item.type}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.date}}">时间:{{item.date}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.itemType}}">物品类型:{{item.itemType}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.locale}}">目的地:{{item.locale}}</van-tag>
+    <van-tag plain color="#f2826a" class="tag" wx:if="{{item.destn}}">描述:{{item.destn}}</van-tag>
+  </view>
+  <view slot="footer">
+    <van-button size="mini">{{item.itemDB}}</van-button>
+  </view>
+</van-card>
+<van-divider contentPosition="center" textColor="#cccccc" borderColor="#cccccc" fontSize="16"> 审核通过</van-divider>
+<view wx:if="{{_own.length==0}}" style="text-align: center; color:#888888;">(空)</view>
+<van-swipe-cell data-item="{{item.itemDB}}" data-index="{{index}}" data-id="{{item._id}}" right-width="{{ 65 }}" async-close bind:close="onClose" wx:for="{{_own}}" wx:key="index">
+  <van-card num="{{item.num}}" price="{{item.price}}" desc="{{item.descr}}" title="{{item.title}}">
+    <view slot="tags">
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.itemType}}">{{item.itemType}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.tags}}">崭新程度:{{item.tags}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.type}}">物品类型:{{item.type}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.date}}">时间:{{item.date}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.itemType}}">物品类型:{{item.itemType}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.locale}}">目的地:{{item.locale}}</van-tag>
+      <van-tag plain color="#f2826a" class="tag" wx:if="{{item.destn}}">描述:{{item.destn}}</van-tag>
+    </view>
+    <view slot="footer">
+      <van-button size="mini">{{item.itemDB}}</van-button>
+    </view>
+  </van-card>
+  <view slot="right" class="right">
+    <van-icon name="delete" />
+  </view>
+</van-swipe-cell>
+
+<van-dialog id="van-dialog" />

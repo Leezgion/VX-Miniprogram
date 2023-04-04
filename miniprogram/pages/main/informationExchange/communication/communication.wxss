@@ -1,0 +1,210 @@
+.all,
+.mine {
+    display: flex;
+    height: 50rpx;
+    margin-top: 10rpx;
+    justify-content: center;
+    align-items: center;
+    animation-name: change;
+    animation-duration: 1400ms;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    color: #fff;
+}
+@keyframes change {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.btn-left {
+    display: flex;
+    width: 100rpx;
+    margin-left: 10rpx;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15rpx 0 0 15rpx;
+    background-color: #7B68EE;
+    box-shadow: 15px 3px 30rpx #000;
+}
+
+.btn-right {
+    display: flex;
+    width: 100rpx;
+    margin-right: 10rpx;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15rpx 15rpx 0;
+    background-color: #7B68EE;
+    box-shadow: 15px 3px 30rpx #000;
+}
+
+.text,
+.icon {
+    height: 100%;
+    line-height: 50rpx;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 25rpx;
+}
+
+.triangle-left {
+    border: 25rpx solid transparent;
+    border-left: 25rpx solid#7B68EE;
+}
+
+.triangle-right {
+    border: 25rpx solid transparent;
+    border-right: 25rpx solid#7B68EE;
+}
+
+.screen {
+    display: flex;
+    justify-content: space-between;
+    /* background-image: linear-gradient(to bottom, #7B68EE, #D0CAF9);
+    box-shadow: 0 0 40rpx #9685f8; */
+
+}
+
+/* 发布按钮 */
+.publish_btn {
+    position: fixed;
+    right: 60rpx;
+    bottom: 200rpx;
+}
+
+.publish_btn .van-button {
+    width: 120rpx;
+    height: 120rpx;
+    font-size: 65rpx;
+    box-shadow: 0 0 10px #7B68EE;
+}
+
+page {
+    background-color: #f7f8fa;
+}
+
+.loopList {
+    padding: 30rpx;
+}
+
+.item {
+    margin-bottom: 30rpx;
+}
+
+.blog {
+    padding: 30rpx;
+    font-size: small;
+    background-color: #ffffff;
+}
+
+.user {
+    display: flex;
+}
+
+.user>image {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+
+.model {
+    font-size: smaller;
+}
+
+.close {
+    position: absolute;
+    right: 20rpx;
+    top: 20rpx;
+    font-size: 28rpx;
+    color: #ccc;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn .van-button {
+    margin-right: 10rpx;
+}
+
+.section {
+    height: 100%;
+    overflow: auto;
+    padding: 60rpx 30rpx 100rpx;
+    box-sizing: border-box;
+}
+
+.topSection {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 60rpx;
+    width: 100%;
+    line-height: 60rpx;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 25rpx;
+    font-weight: 600;
+}
+
+.bottomSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.commentItem {
+    padding: 10rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc {
+    position: absolute;
+    left: 50rpx;
+    font-size: smaller;
+    color: #777777;
+}
+
+.avatar {
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar image {
+    width: 100%;
+    height: 100%;
+}
+
+.comments {
+    width: 85%;
+}
+
+.comments .nickname {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25rpx;
+    color: #888888;
+}
+
+.comments .comment {
+    font-size: 28rpx;
+    padding: 10rpx 0 15rpx;
+}
+
+.bottomLoading {
+    text-align: center;
+}

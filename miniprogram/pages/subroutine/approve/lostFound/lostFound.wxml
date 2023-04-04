@@ -1,0 +1,37 @@
+<wxs module="common" src="../../../../commonWXS/common.wxs" />
+<block wx:for="{{lost_found}}" wx:key="index">
+    <view>
+        <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+            <van-collapse-item title="{{item.itemDB}}">
+                <van-card desc="{{item.descr}}" title="{{item.title}}" class="card">
+                    <view slot="tags">
+                        <van-tag plain color="#f2826a" class="tag">{{item.itemType}}</van-tag>
+                        <van-tag plain color="#f2826a" class="tag">{{item.locale}}</van-tag>
+                        <van-tag plain color="#f2826a" class="tag">{{item.date}}</van-tag>
+                    </view>
+                    <view slot="footer" class="footer">
+                        <view class="left">
+                            <view>联系方式:{{item.contact}}</view>
+                            <vie>{{common.timesFun(item.uploadTime)}}</vie>
+                        </view>
+                        <view>
+                            <van-button data-id="{{item.openid}}" data-index="{{index}}" data-attribution="{{item.itemDB}}" data-title="{{item.title}}" color="" size="mini" catchtap="return">退回</van-button>
+                            <van-button data-id="{{item._id}}" data-index="{{index}}"  color="#FFD700" size="mini" catchtap="remove">删除</van-button>
+                            <van-button data-id="{{item._id}}" data-index="{{index}}" color="{{item.btnColor}}" size="mini" catchtap="approved">通过</van-button>
+                        </view>
+                    </view>
+                </van-card>
+            </van-collapse-item>
+        </van-collapse>
+    </view>
+</block>
+
+<van-popup show="{{ reasonSection }}" round position="bottom" custom-style="height: 20%;" bind:close="onClose" class="popup">
+    <view class="inputSection">
+        <van-cell-group>
+            <van-field value="{{ reason }}" clearable left-icon="description" label="退回原因" type="textarea" placeholder="请输入退回原因" autosize bind:input="input" use-button-slot>
+                <van-button slot="button" type="primary" size="small" disabled="{{btn}}" catchtap="sendBack">发送</van-button>
+            </van-field>
+        </van-cell-group>
+    </view>
+</van-popup>

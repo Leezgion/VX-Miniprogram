@@ -1,0 +1,118 @@
+page{
+  font-family: 'Courier New', Courier, monospace;
+}
+/* 发布按钮 */
+.publish_btn {
+  position: fixed;
+  right: 60rpx;
+  bottom: 200rpx;
+}
+
+.publish_btn .van-button {
+  width: 120rpx;
+  height: 120rpx;
+  font-size: 65rpx;
+  box-shadow: 0 0 10px rgba(7, 193, 96, 0.6);
+}
+/* 删除叉号 */
+.user__ {
+  height: 25rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 循环任务块 */
+.task {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 370rpx;
+  font-size: smaller;
+  justify-content: space-between;
+  margin: 30rpx 20rpx;
+  box-shadow: 5rpx 5rpx 20rpx #000000;
+  border-radius: 25px;
+  background-color: ghostwhite;
+}
+/* 任务块中间部分 */
+.middle {
+  display: flex;
+  width: 300rpx;
+  height: 240rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle .title {
+  display: flex;
+  width: 210rpx;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.middle .descr {
+  height: 170rpx;
+  width: 100%;
+  border: dotted chocolate;
+  border-radius: 10px;
+  padding: 10rpx;
+  text-indent: 10%;
+  overflow: hidden;
+}
+/* 任务左侧用户部分 */
+.user {
+  display: flex;
+  height: 220rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.attr {
+  display: flex;
+  width: 180rpx;
+  height: 270rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.uploadTime {
+  position: absolute;
+  right: 40rpx;
+  bottom: 22rpx;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  color: #888;
+}
+
+.bottomLoading {
+  text-align: center;
+}
+
+/* .desc {
+  display: -webkit-box;
+  width: 35vw;
+  height: 9vh;
+  border: 1px dotted chocolate;
+  border-radius: 3vw;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-indent: 10%;
+  text-overflow: ellipsis;
+
+  color: rgb(103, 105, 107);
+  font-family: "Times New Roman", Times, serif;
+} */

@@ -1,0 +1,4 @@
+<view>用户发布信息比例:</view>
+<canvas canvas-id="pie" class="canvas"></canvas>
+<view>信息数量统计:</view>
+<canvas canvas-id="histogram" class="canvas"></canvas>

@@ -1,0 +1,23 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.user>image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+.time{
+    font-size: 20rpx;
+    color: #888888;
+    width: 200rpx;
+}
+.van-cell-text{
+    width: 230rpx;
+}
+.nickname{
+    overflow: hidden;
+}

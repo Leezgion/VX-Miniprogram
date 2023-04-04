@@ -1,0 +1,18 @@
+.cell .van-cell .van-cell__title{
+    flex:3
+}
+/* .cell .van-cell .van-cell__value{
+    flex: 1;
+} */
+.publish_btn {
+    position: fixed;
+    right: 60rpx;
+    bottom: 200rpx;
+}
+
+.publish_btn .van-button {
+    width: 120rpx;
+    height: 120rpx;
+    font-size: 65rpx;
+    box-shadow: 0 0 10px rgba(9, 147, 226, 0.6);
+}

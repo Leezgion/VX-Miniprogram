@@ -1,0 +1,637 @@
+{
+    "setting": {},
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/welcome/welcome",
+                    "pathName": "pages/welcome/welcome",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/uploadPage/uploadPage",
+                    "pathName": "pages/main/uploadPage/uploadPage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/approve",
+                    "pathName": "pages/subroutine/approve/approve",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/cartogram/cartogram",
+                    "pathName": "pages/subroutine/cartogram/cartogram",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/notice/notice",
+                    "pathName": "pages/subroutine/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/informationExchange/communication/communication",
+                    "pathName": "pages/main/informationExchange/communication/communication",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/notice/notice",
+                    "pathName": "pages/subroutine/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/applicants/applicants",
+                    "pathName": "pages/subroutine/applicants/applicants",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/uploadPage/uploadPage",
+                    "pathName": "pages/main/uploadPage/uploadPage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/secondHandDeal/secondHandDeal",
+                    "pathName": "pages/main/secondHandDeal/secondHandDeal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/approve",
+                    "pathName": "pages/subroutine/approve/approve",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/deal/deal",
+                    "pathName": "pages/subroutine/approve/deal/deal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/task/task",
+                    "pathName": "pages/subroutine/approve/task/task",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/secondHandDeal/secondHandDeal",
+                    "pathName": "pages/main/secondHandDeal/secondHandDeal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/deal/deal",
+                    "pathName": "pages/subroutine/approve/deal/deal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/task/task",
+                    "pathName": "pages/subroutine/approve/task/task",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/history/history",
+                    "pathName": "pages/subroutine/history/history",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/uploadPage/uploadPage",
+                    "pathName": "pages/main/uploadPage/uploadPage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/secondHandDeal/secondHandDeal",
+                    "pathName": "pages/main/secondHandDeal/secondHandDeal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/history/history",
+                    "pathName": "pages/subroutine/history/history",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/notice/notice",
+                    "pathName": "pages/subroutine/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/history/history",
+                    "pathName": "pages/subroutine/history/history",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/notice/notice",
+                    "pathName": "pages/subroutine/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/approve",
+                    "pathName": "pages/subroutine/approve/approve",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/approve/lostFound/lostFound",
+                    "pathName": "pages/subroutine/approve/lostFound/lostFound",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/applicants/applicants",
+                    "pathName": "pages/subroutine/applicants/applicants",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/admins/admins",
+                    "pathName": "pages/subroutine/admins/admins",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/admins/admins",
+                    "pathName": "pages/subroutine/admins/admins",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/saying/saying",
+                    "pathName": "pages/subroutine/saying/saying",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/saying/newlyUpload/newlyUpload",
+                    "pathName": "pages/subroutine/saying/newlyUpload/newlyUpload",
+                    "query": "index=0",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/saying/newlyUpload/newlyUpload",
+                    "pathName": "pages/subroutine/saying/newlyUpload/newlyUpload",
+                    "query": "index=1",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/cartogram/cartogram",
+                    "pathName": "pages/subroutine/cartogram/cartogram",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/notice/notice",
+                    "pathName": "pages/subroutine/notice/notice",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/saying/saying",
+                    "pathName": "pages/subroutine/saying/saying",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/admins/admins",
+                    "pathName": "pages/subroutine/admins/admins",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/secondHandDeal/secondHandDeal",
+                    "pathName": "pages/main/secondHandDeal/secondHandDeal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/secondHandDeal/secondHandDeal",
+                    "pathName": "pages/main/secondHandDeal/secondHandDeal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/notification/notification",
+                    "pathName": "pages/notification/notification",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/saying/saying",
+                    "pathName": "pages/subroutine/saying/saying",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/uploadPage/uploadPage",
+                    "pathName": "pages/main/uploadPage/uploadPage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/history/history",
+                    "pathName": "pages/subroutine/history/history",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/admins/admins",
+                    "pathName": "pages/subroutine/admins/admins",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/applicants/applicants",
+                    "pathName": "pages/subroutine/applicants/applicants",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/informationExchange/communication/communication",
+                    "pathName": "pages/main/informationExchange/communication/communication",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/lost-found/lost-found",
+                    "pathName": "pages/main/lost-found/lost-found",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/welcome/welcome",
+                    "pathName": "pages/welcome/welcome",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/substitute/substitute",
+                    "pathName": "pages/main/substitute/substitute",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/uploadPage/uploadPage",
+                    "pathName": "pages/main/uploadPage/uploadPage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/informationExchange/communication/communication",
+                    "pathName": "pages/main/informationExchange/communication/communication",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subroutine/subroutine",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/informationExchange/communication/communication",
+                    "pathName": "pages/main/informationExchange/communication/communication",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/main/main",
+                    "pathName": "pages/main/main",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/subroutine/subroutine",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/subroutine/saying/newlyUpload/newlyUpload",
+                    "query": "index=1",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/main/informationExchange/communication/communication",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

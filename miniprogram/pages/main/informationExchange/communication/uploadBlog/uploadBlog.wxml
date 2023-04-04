@@ -1,0 +1,8 @@
+<view class="container">
+    <form bindsubmit="onSubmit">
+    <textarea name="content" value="{{value}}" placeholder="请输入要发布的内容" bindinput="onChange"></textarea>
+        <van-cell title="{{locName?locName:'所在位置'}}" icon="location-o" is-link bind:tap="getLoc"></van-cell>
+        <van-uploader wx:if="{{index==1}}" multiple max-count="9" disabled="{{false}}" file-list="{{fileList}}" bind:after-read="afterReadImg" bind:delete="deleteImg"></van-uploader>
+        <button type="primary" disabled="{{btn}}" form-type="submit">发布</button>
+    </form>
+</view>
